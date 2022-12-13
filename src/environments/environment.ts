@@ -2,16 +2,12 @@ export const environment = {
     production: false,
     users: [
         {
-            username: 'soyideal',
+            username: 'manuel',
             password: 'manuel123456'
         },
         {
-            username: 'paraestetrabajo',
-            password: 'manuel123456'
-        },
-        {
-            username: 'contratenme',
-            password: 'manuel123456'
+            username: 'hpe',
+            password: 'hpe123456'
         }
     ],
     weatherAPIKEY: '5b4a5fb7fff1a8f5a3c0cd68dc4e9a5b',
