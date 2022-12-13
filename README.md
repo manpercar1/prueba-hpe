@@ -20,3 +20,21 @@ De cada ciudad, se muestran datos como la temperatura (temperatura actual, máxi
 2. Abrir la consola de comandos y navegar hasta la ruta de la carpeta del proyecto. Instalar los paquetes necesarios para la ejecución del proyecto con el comando `npm install` o `npm i`.
 3. Una vez termine la instalación, ejecutar el proyecto con `ng serve`.
 4. Para ejecutar de las pruebas del proyecto, primero, parar la ejecución del proyecto cancelando en la ventana de comandos. Luego, ejecutar el comando `ng test`.
+
+## Características del proyecto
+
+- Funcionalidad completa de inicio de sesión.
+- Guardado de usuario en localStorage a modo de "token" para controlar la sesión.
+- Guard implementado para la gestión de la sesión (sólo se puede acceder al home si existe un token en el localStorage que simbolice que el usuario ha iniciado sesión).
+- Búsqueda de ciudades con select filtrable tipo typeahead diseñado con NgBootstrap.
+- Componentes varios de PrimeNG.
+- Proyecto modularizado: 
+    - Módulo Shared para los elementos compartidos en todo el proyecto
+    - Módulo PrimeNG para importar únicamente los componentes de PrimeNG
+    - Módulo Ciudades para los componentes y servicios que conforman el core del proyecto.
+    - Módulo Auth para los componentes y servicios que conforman el inicio de la sesión y la gestión de la misma.
+- LazyLoad implementado para las rutas del proyecto.
+- Uso de constantes para mejorar la usabilidad del código.
+- Uso de variables de entorno con los environment.
+- Uso del Google Maps API con API Key real.
+- Implementación y configuración de Karma y Jasmine para las pruebas unitarias.
