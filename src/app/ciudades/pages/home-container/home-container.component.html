@@ -1,0 +1,24 @@
+<nav class="navbar bg-custom">
+    
+    <h5 class="mt-2 mx-2">
+        <a routerLink="/home" class="text-decoration-none text-black">
+            <img src="../../../../assets/images/2048px-Angular_full_color_logo.svg.png" alt="Angular logo" height="45">
+            MyCitiesWeather
+        </a>
+    </h5>
+    
+    <div class="mx-3 d-flex">
+        <button (click)="logOut()" class="btn btn-primary">Salir <i class="pi pi-sign-out"></i></button>
+    </div>
+
+</nav>
+
+<div class="row mt-5 mx-3">
+    <div class="col-4">
+        <app-ciudades-favoritas (seleccionCiudad)="ciudadSeleccionada($event)" (eliminarCiudad)="ciudadEliminada()"></app-ciudades-favoritas>
+    </div>
+
+    <div class="col-7 mx-5">
+        <app-buscador-ciudades [idCiudadSeleccionada]="idCiudadSeleccionada"></app-buscador-ciudades>
+    </div>
+</div>

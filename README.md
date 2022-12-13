@@ -1,27 +1,22 @@
-# PruebaTecnicaHpe
+# MyCitiesWeather
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
+Este es un proyecto desarrollado para la prueba técnica propuesta por HPE.
 
-## Development server
+Ha sido llamado MyCitiesWeather, ya que se trata de una aplicación que muestra los datos del tiempo de ciudades que hayan sido seleccionadas previamente por el usuario y hayan sido guardadas en una lista de ciudades favoritas.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+De cada ciudad, se muestran datos como la temperatura (temperatura actual, máxima y mínima...), el clima y otros datos atmosféricos como el viento o la humedad. Además, se muestra, mediante la API de Google Maps, su ubicación en el mapa.
 
-## Code scaffolding
+## Detalles de las versiones de los elementos del proyecto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Versión de Angular: 15.0.3
+- Versión de Angular CLI: 15.0.3
+- Versión de Node: 18.12.1
+- Versión npm: 8.19.2
+- Versión de Typescript: 4.8.4
 
-## Build
+## Instalación y ejecución
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Clonar el proyecto en una carpeta local cualquiera con el comando `git clone https://github.com/manpercar1/prueba-hpe.git`.
+2. Abrir la consola de comandos y navegar hasta la ruta de la carpeta del proyecto. Instalar los paquetes necesarios para la ejecución del proyecto con el comando `npm install` o `npm i`.
+3. Una vez termine la instalación, ejecutar el proyecto con `ng serve`.
+4. Para ejecutar de las pruebas del proyecto, primero, parar la ejecución del proyecto cancelando en la ventana de comandos. Luego, ejecutar el comando `ng test`.

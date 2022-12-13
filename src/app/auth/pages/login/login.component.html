@@ -1,0 +1,40 @@
+<div class="container pt-5">
+    <div class="row justify-content-center">
+        <p-card class="col-12 col-md-9 col-lg-8 col-xl-6 text-center" header="Bienvenido">
+            <form [formGroup]="form" (ngSubmit)="onLogin()">
+                <div class="container-fluid">
+                    <div class="row mt-3">
+                        <div class="col-12 text-left">
+                            <div class="p-inputgroup">
+                                <span class="p-float-label">
+                                    <input type="text" id="inputtext" pInputText formControlName="usernameField">
+                                    <label for="inputtext">Usuario</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-12 text-left">
+                            <div class="p-inputgroup">
+                                <span class="p-float-label">
+                                    <input type="{{inputType}}" pPassword id="inputpassword"
+                                        formControlName="passwordField" [feedback]="false" />
+                                    <label for="inputpassword">Contraseña</label>
+
+                                </span>
+                                <div class="p-inputgroup-addon" (click)="showPassword = !showPassword">
+                                    <i class="{{passIcon}}" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <button pButton type="submit" class="ui-button-success" [label]="labelBotonEnviar"
+                        [disabled]="!form.valid || formularioEnviado"></button>
+                </div>
+            </form>
+        </p-card>
+    </div>
+</div>
