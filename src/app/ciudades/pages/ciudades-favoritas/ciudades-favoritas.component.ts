@@ -1,16 +1,16 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { CiudadesFavoritasService } from '../../services/ciudades-favoritas.service';
+import { CiudadesService } from '../../services/ciudades.service';
 import { Ciudad } from '../../interfaces/ciudad';
 import Swal from 'sweetalert2';
 import { Router } from '@angular/router';
 import { SharedConstants } from '../../../shared/constants/shared-constants';
 
 @Component({
-  selector: 'app-paises-favoritos',
-  templateUrl: './paises-favoritos.component.html',
-  styleUrls: ['./paises-favoritos.component.css']
+  selector: 'app-ciudades-favoritas',
+  templateUrl: './ciudades-favoritas.component.html',
+  styleUrls: ['./ciudades-favoritas.component.css']
 })
-export class PaisesFavoritosComponent {
+export class CiudadesFavoritasComponent {
 
   @Output('seleccionCiudad') seleccionCiudad: EventEmitter<number> = new EventEmitter<number>();
   @Output('eliminarCiudad') eliminarCiudad: EventEmitter<void> = new EventEmitter<void>();
@@ -23,7 +23,7 @@ export class PaisesFavoritosComponent {
     return this.ciudadesService.ciudades;
   }
   
-  constructor(private ciudadesService: CiudadesFavoritasService, private router: Router) {}
+  constructor(private ciudadesService: CiudadesService, private router: Router) {}
 
   onSelectCiudad(idCiudad: number) {
     this.ciudadActiva = idCiudad.toString();

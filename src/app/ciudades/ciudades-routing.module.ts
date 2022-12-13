@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeContainerComponent } from './pages/home-container/home-container.component';
-import { BuscadorPaisesComponent } from './pages/buscador-paises/buscador-paises.component';
+import { BuscadorCiudadesComponent } from './pages/buscador-ciudades/buscador-ciudades.component';
 
 const routes: Routes = [
   {
@@ -10,7 +10,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: BuscadorPaisesComponent
+        component: BuscadorCiudadesComponent
       },
     ]
   }

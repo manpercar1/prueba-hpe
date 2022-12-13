@@ -15,10 +15,10 @@
 
 <div class="row mt-5 mx-3">
     <div class="col-4">
-        <app-paises-favoritos (seleccionCiudad)="ciudadSeleccionada($event)" (eliminarCiudad)="ciudadEliminada()"></app-paises-favoritos>
+        <app-ciudades-favoritas (seleccionCiudad)="ciudadSeleccionada($event)" (eliminarCiudad)="ciudadEliminada()"></app-ciudades-favoritas>
     </div>
 
     <div class="col-7 mx-5">
-        <app-buscador-paises [idCiudadSeleccionada]="idCiudadSeleccionada"></app-buscador-paises>
+        <app-buscador-ciudades [idCiudadSeleccionada]="idCiudadSeleccionada"></app-buscador-ciudades>
     </div>
 </div>

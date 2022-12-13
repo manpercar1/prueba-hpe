@@ -4,17 +4,17 @@ import { debounceTime, distinctUntilChanged, map, Observable, OperatorFunction }
 import * as data from '../../../../assets/data/cities.json';
 import { Ciudad } from '../../interfaces/ciudad';
 import { WeatherReport } from '../../interfaces/weatherReport';
-import { CiudadesFavoritasService } from '../../services/ciudades-favoritas.service';
+import { CiudadesService } from '../../services/ciudades.service';
 import { environment } from '../../../../environments/environment';
 import { MensajeService } from '../../../shared/services/messages/mensaje.service';
 import { Severity } from '../../../shared/constants/severity';
 
 @Component({
-  selector: 'app-buscador-paises',
-  templateUrl: './buscador-paises.component.html',
-  styleUrls: ['./buscador-paises.component.css']
+  selector: 'app-buscador-ciudades',
+  templateUrl: './buscador-ciudades.component.html',
+  styleUrls: ['./buscador-ciudades.component.css']
 })
-export class BuscadorPaisesComponent {
+export class BuscadorCiudadesComponent {
 
   @Input() idCiudadSeleccionada: number = 0;
 
@@ -33,7 +33,7 @@ export class BuscadorPaisesComponent {
   public date = Date.now();
   
   
-  constructor(private ciudadesService: CiudadesFavoritasService, private mensajeService: MensajeService) {}
+  constructor(private ciudadesService: CiudadesService, private mensajeService: MensajeService) {}
 
   public formatter = (x: { name: string }) => x.name;
 
