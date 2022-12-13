@@ -1,0 +1,19 @@
+<h2>Ciudades favoritas</h2>
+<hr>
+<div>
+    <ul class="list-group">
+        <li 
+            *ngFor="let ciudad of ciudades"
+            class="list-group-item d-inline-flex justify-content-between align-items-center" 
+            (click)="onSelectCiudad(ciudad.id)"
+            [class.active]="ciudadActiva === ciudad.id.toString()"
+        >
+            <div>
+                {{ciudad.name}}
+            </div> 
+            <div class="bg-danger px-2 py-1 rounded" (click)="onDelete(ciudad)">
+                <i class="pi pi-trash"></i>
+            </div>
+        </li>
+    </ul>
+</div>
