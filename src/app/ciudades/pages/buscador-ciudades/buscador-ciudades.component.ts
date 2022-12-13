@@ -29,9 +29,6 @@ export class BuscadorCiudadesComponent {
   
   public WEATHER_INCONS_URL_BEG = environment.weatherIconsURLBeg;
   public WEATHER_INCONS_URL_END = environment.weatherIconsURLEnd;
-
-  public date = Date.now();
-  
   
   constructor(private ciudadesService: CiudadesService, private mensajeService: MensajeService) {}
 
